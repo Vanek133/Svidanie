@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Для тебя ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone">
+
+    <!-- Экран 1 -->
+
+    <div class="screen active" id="screen1">
+
+        <img src="img/monkey1.jpg">
+
+        <h2>
+            Марина, Пойдешь со мной на свидание,
+            которое ещё приблизит нас на шаг
+            к семейной ипотеке? 😏
+        </h2>
+
+        <div class="buttons">
+
+            <button class="yes" onclick="nextScreen(2)">
+                Дааа ❤️
+            </button>
+
+            <button
+                class="no"
+                id="noBtn">
+
+                Нееет 😢
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Экран 2 -->
+
+    <div class="screen" id="screen2">
+
+        <img src="img/monkey2.png">
+
+        <h2>
+            Подожди...
+            Малышка, Ты реально сказала да? 😍
+        </h2>
+
+        <p>
+            Я уже готовился к провалу 😂(сколько раз нажала "нет"???ахах)
+        </p>
+
+        <button class="yes" onclick="nextScreen(3)">
+            Продолжить
+        </button>
+
+    </div>
+
+   <!-- Экран выбора даты и времени --> 
+
+<div class="screen" id="screen3">
+
+    <img src="img/cat.jpg">
+
+    <h2>
+        Когда тебе будет удобно? 😊 (PS.желательно не после работы, а чтобы были силы и подольше)
+    </h2>
+
+    <label>Дата</label>
+
+    <input type="date" id="date">
+
+    <label>Время</label>
+
+    <input type="time" id="time">
+
+    <button class="yes" onclick="saveDateTime()">
+        Далее ❤️
+    </button>
+
+</div>
+
+
+    <!-- Экран 4 -->
+
+    <div class="screen" id="screen4">
+
+        <h2>
+            Что тебе больше хочется?
+        </h2>
+
+        <div class="food">
+
+            <button onclick="chooseFood('Пицца 🍕')">
+                🍕 Пицца
+            </button>
+
+            <button onclick="chooseFood('Суши 🍣')">
+                🍣 Роллы
+            </button>
+
+            <button onclick="chooseFood('Бургеры 🍔')">
+                🍔 Бургеры
+            </button>
+
+            <button onclick="chooseFood('Паста 🍝')">
+                🍝 Паста
+            </button>
+
+            </div>
+
+            <p style="margin-top: 20px;">
+                Или напиши свой вариант 🦁
+            </p>
+            <input type="text" 
+            id="customFood"
+            placeholder="Например...чипсы"
+            >
+
+            <button class="yes"
+            onclick="saveCustomFood()">
+
+                Уже вот вот 
+            </button>
+
+    </div>
+
+    <!-- Финал -->
+
+    <div class="screen" id="screen5">
+
+        <img src="img/final.jpg">
+
+        <h2>
+            Спасибо ❤️
+            
+        </h2>
+
+        <p id="result"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

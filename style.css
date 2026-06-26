@@ -1,0 +1,119 @@
+body { 
+
+    background:#ffeaf3;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    padding:30px;
+
+}
+
+
+.phone {
+
+    width:350px;
+    background:white;
+    border-radius:30px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.screen {
+
+    display:none;
+    text-align:center;
+
+}
+
+.active {
+
+    display:block;
+
+}
+
+img {
+
+    width:100%;
+    border-radius:20px;
+
+}
+
+h2 {
+
+    color:#222;
+    line-height:1.4;
+
+}
+
+p {
+
+    color:#666;
+
+}
+
+.buttons {
+
+    display:flex;
+    gap:10px;
+    justify-content:center;
+
+}
+
+button {
+
+    border:none;
+    cursor:pointer;
+
+}
+
+.yes {
+
+    background:#ff4f9c;
+    color:white;
+    padding:15px 25px;
+    border-radius:15px;
+    font-size:18px;
+
+}
+
+.no {
+
+    background:white;
+    border:2px solid #ff4f9c;
+    color:#ff4f9c;
+    padding:15px 25px;
+    border-radius:15px;
+    position:relative;
+
+}
+
+.food {
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+}
+
+.food button {
+
+    background:#ffe4ef;
+    padding:15px;
+    border-radius:15px;
+
+}
+.food button.selected {
+    background: #ff4f9c;
+    color: white;
+}
+
+input {
+
+    width:90%;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:15px;
+    border:1px solid #ddd;
+
+}
